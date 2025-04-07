@@ -1,0 +1,1 @@
+# solyn_dynamics365_mcp_server
