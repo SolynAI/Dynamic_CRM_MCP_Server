@@ -2,6 +2,10 @@
 # Overview
 The Microsoft Dynamics 365 MCP Server is a MCP server that provides tools to interact with Microsoft Dynamics 365 using the Model Context Protocol(MCP) by Anthorpic. It allows users to perform various operations such as retrieving user information, accounts, opportunities associated with an account, create and update accounts from Claude Desktop.
 
+`Solyn.AI` is an AI-Native application platform designed for generative artificial intelligence services (AIGS) to help enterprises achieve intelligent transformation. The platform is built on a large-scale model of hundreds of billions of units, providing customers in different industries and application scenarios with a variety of development options so that they can create AI native products that adapt to the era of large models.
+Solyn.AI integrates the core technologies needed to build AI native applications, including support for hundreds of models, a user-friendly prompt word arrangement interface, a high-performance RAG (Retrieval-Augmented Generation) engine, and a flexibly configurable intelligent agent framework. In addition, Solyn also provides easy-to-use mobile solutions, allowing customers to focus more on innovation and meeting business needs, thereby promoting the development and growth of enterprises.
+Find more: www.solyn.ai   
+
 # List of Tools 🛠️
 
 | Tool Name                          | Description                                                                 | Input                                                                                                                                                                                                 | Output                                                                 |
