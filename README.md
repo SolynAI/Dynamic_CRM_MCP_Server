@@ -23,3 +23,58 @@
 | `get_all_product_pricelevels` | 获取价目表项(价格体系)                                                      | `top` (integer, default=1000)                                                                                                                                                                                                                                                                                                                   | 价目表项列表(JSON格式)    |
 | `get_all_emails`              | 获取当前帐号下的邮件记录                                                    | `top` (integer, default=1000)                                                                                                                                                                                                                                                                                                                   | 邮件记录列表(JSON格式)    |
 | `query_entity`                | 通用实体查询方法                                                            | **Required:**<br>`entity_name` (string)<br>**Optional:**<br>`filter`, `select`, `expand`, `top`, `orderby`                                                                                                                                                                                                                                       | 查询结果(JSON格式)        |
+
+# Dynamics 365 MCP Server Integration
+
+## Prerequisites 📝
+
+Before setting up the project, ensure you have the following:
+
+- **Python 3.10** or later
+- Access to a **Dynamics 365 instance** with API permissions
+- **Azure Active Directory (AAD)** application configured with Dynamics 365 API access
+  - Application must have the following permissions:
+    - Dynamics CRM user_impersonation
+    - Office 365 Exchange Online
+
+## Setup & Installation ⚙️
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/your-repo/dynamics365-mcp-server.git
+cd dynamics365-mcp-server
+```
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+## Claude for Desktop Integration 🖥️
+Add this configuration to your Claude settings file (settings.json):
+```json
+{
+    "mcpServers": {
+        "Dynamic_CRM_MCP_Server": {
+            "command": "python",
+            "args": ["Dynamic_CRM_MCP_Server/server.py"],
+            "env": {
+                "CLIENT_ID": "<your_client_id>",
+                "CLIENT_SECRET": "<your_client_secret>",
+                "TENANT_ID": "<your_tenant_id>",
+                "RESOURCE": "<your_dynamics365_resource_url>"
+            }
+        }
+    }
+}
+```
+
+## Note
+Replace values in <angle_brackets> with your actual credentials:
+
+CLIENT_ID: Azure AD Application ID
+
+CLIENT_SECRET: Azure AD Client Secret
+
+TENANT_ID: Azure Directory (tenant) ID
+
+RESOURCE: Dynamics 365 instance URL (e.g. https://orgname.crm.dynamics.com)
