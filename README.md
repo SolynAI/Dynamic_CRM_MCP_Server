@@ -49,8 +49,8 @@ Before setting up the project, ensure you have the following:
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/your-repo/dynamics365-mcp-server.git
-cd dynamics365-mcp-server
+git clone https://github.com/your-repo/Dynamic_CRM_MCP_Server.git
+cd Dynamic_CRM_MCP_Server
 ```
 ### 2. Install Dependencies
 ```bash
