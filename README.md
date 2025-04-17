@@ -1,6 +1,4 @@
-<!--
-<meta property="og:image" content="https://example.com/your-image.png" />
--->
+![Preview](https://example.com/your-image.png)
 # Solyn_dynamics365_mcp_server
 # Overview
 The Microsoft Dynamics 365 MCP Server is a MCP server that provides tools to interact with Microsoft Dynamics 365 using the Model Context Protocol(MCP) by Anthorpic. It allows users to perform various operations such as retrieving user information, accounts, opportunities associated with an account, create and update accounts from Claude Desktop.
